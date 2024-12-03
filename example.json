@@ -1,0 +1,250 @@
+[
+  {
+    "id": "task-001",
+    "name": "Research AI Tools",
+    "description": "Exploring tools and frameworks for building machine learning models.",
+    "time_active": 7200,
+    "previous_tab_names": [
+      "10 Best AI Frameworks for 2024",
+      "How to Use TensorFlow",
+      "PyTorch vs TensorFlow: Which to Choose?"
+    ],
+    "keywords": [
+      "AI",
+      "Machine Learning",
+      "Frameworks",
+      "TensorFlow",
+      "PyTorch"
+    ],
+    "created_at": "2024-12-01T10:00:00Z",
+    "last_active_at": "2024-12-01T12:00:00Z",
+    "related_urls": ["https://tensorflow.org", "https://pytorch.org"],
+    "priority": "high",
+    "associated_tabs": [
+      {
+        "tab_name": "PyTorch Documentation",
+        "url": "https://pytorch.org/docs"
+      },
+      {
+        "tab_name": "Understanding Neural Networks",
+        "url": "https://example.com/neural-networks"
+      }
+    ]
+  },
+  {
+    "id": "task-002",
+    "name": "Email Follow-ups",
+    "description": "Responding to pending emails from clients and colleagues.",
+    "time_active": 3600,
+    "previous_tab_names": [
+      "Inbox - Email Client",
+      "Meeting Follow-up Email Template"
+    ],
+    "keywords": ["email", "follow-up", "clients", "templates"],
+    "created_at": "2024-12-01T09:30:00Z",
+    "last_active_at": "2024-12-01T10:30:00Z",
+    "related_urls": [
+      "https://mail.example.com",
+      "https://emailtemplates.example.com"
+    ],
+    "priority": "medium",
+    "associated_tabs": [
+      { "tab_name": "Inbox - Email Client", "url": "https://mail.example.com" }
+    ]
+  },
+  {
+    "id": "task-003",
+    "name": "Create a Project Proposal",
+    "description": "Drafting a comprehensive proposal for an upcoming project.",
+    "time_active": 4800,
+    "previous_tab_names": ["Project Guidelines", "Proposal Template"],
+    "keywords": ["proposal", "project", "drafting", "templates"],
+    "created_at": "2024-12-01T11:00:00Z",
+    "last_active_at": "2024-12-01T12:00:00Z",
+    "related_urls": [
+      "https://proposal.example.com",
+      "https://projectguidelines.example.com"
+    ],
+    "priority": "high",
+    "associated_tabs": [
+      {
+        "tab_name": "Project Management Tools",
+        "url": "https://projectmanagement.example.com"
+      }
+    ]
+  },
+  {
+    "id": "task-004",
+    "name": "Update Website Content",
+    "description": "Refreshing text and images on the company website.",
+    "time_active": 5400,
+    "previous_tab_names": ["Website Editor", "SEO Best Practices"],
+    "keywords": ["website", "content", "update", "SEO"],
+    "created_at": "2024-12-01T10:45:00Z",
+    "last_active_at": "2024-12-01T12:15:00Z",
+    "related_urls": [
+      "https://websitebuilder.example.com",
+      "https://seobestpractices.example.com"
+    ],
+    "priority": "medium",
+    "associated_tabs": [
+      {
+        "tab_name": "Content Management System",
+        "url": "https://cms.example.com"
+      }
+    ]
+  },
+  {
+    "id": "task-005",
+    "name": "Prepare Financial Report",
+    "description": "Compiling quarterly financial data into a report for stakeholders.",
+    "time_active": 7200,
+    "previous_tab_names": [
+      "Financial Data Spreadsheet",
+      "Report Formatting Guidelines"
+    ],
+    "keywords": ["financial", "report", "data", "stakeholders"],
+    "created_at": "2024-12-01T09:00:00Z",
+    "last_active_at": "2024-12-01T11:00:00Z",
+    "related_urls": [
+      "https://financialreports.example.com",
+      "https://dataanalysis.example.com"
+    ],
+    "priority": "high",
+    "associated_tabs": [
+      {
+        "tab_name": "Spreadsheet Software",
+        "url": "https://spreadsheetsoftware.example.com"
+      }
+    ]
+  },
+  {
+    "id": "task-006",
+    "name": "Plan Marketing Campaign",
+    "description": "Designing a marketing strategy for the upcoming product launch.",
+    "time_active": 6000,
+    "previous_tab_names": ["Marketing Strategies", "Campaign Timeline"],
+    "keywords": ["marketing", "campaign", "strategy", "product launch"],
+    "created_at": "2024-12-01T08:30:00Z",
+    "last_active_at": "2024-12-01T10:30:00Z",
+    "related_urls": [
+      "https://marketingexample.com",
+      "https://campaignplanning.example.com"
+    ],
+    "priority": "high",
+    "associated_tabs": [
+      {
+        "tab_name": "Ad Creation Tools",
+        "url": "https://adcreation.example.com"
+      }
+    ]
+  },
+  {
+    "id": "task-007",
+    "name": "Conduct User Research",
+    "description": "Gathering feedback from users to improve product features.",
+    "time_active": 3600,
+    "previous_tab_names": ["User Feedback Form", "Research Methodologies"],
+    "keywords": ["user research", "feedback", "product improvement"],
+    "created_at": "2024-12-01T07:30:00Z",
+    "last_active_at": "2024-12-01T08:30:00Z",
+    "related_urls": [
+      "https://userresearch.example.com",
+      "https://feedbacktools.example.com"
+    ],
+    "priority": "medium",
+    "associated_tabs": [
+      {
+        "tab_name": "Survey Design Platform",
+        "url": "https://surveyplatform.example.com"
+      }
+    ]
+  },
+  {
+    "id": "task-008",
+    "name": "Analyze Website Traffic",
+    "description": "Using analytics tools to review website visitor statistics.",
+    "time_active": 4200,
+    "previous_tab_names": ["Google Analytics", "Traffic Analysis Reports"],
+    "keywords": ["analytics", "website traffic", "statistics", "reports"],
+    "created_at": "2024-12-01T06:45:00Z",
+    "last_active_at": "2024-12-01T08:45:00Z",
+    "related_urls": [
+      "https://googleanalytics.example.com",
+      "https://trafficanalysis.example.com"
+    ],
+    "priority": "medium",
+    "associated_tabs": [
+      {
+        "tab_name": "Website Analytics Dashboard",
+        "url": "https://analyticsdashboard.example.com"
+      }
+    ]
+  },
+  {
+    "id": "task-009",
+    "name": "Edit Video Content",
+    "description": "Trimming and editing video footage for the new tutorial series.",
+    "time_active": 5400,
+    "previous_tab_names": ["Video Editing Software", "Tutorial Scripts"],
+    "keywords": ["video", "editing", "tutorial", "content creation"],
+    "created_at": "2024-12-01T05:30:00Z",
+    "last_active_at": "2024-12-01T07:00:00Z",
+    "related_urls": [
+      "https://videoediting.example.com",
+      "https://tutorials.example.com"
+    ],
+    "priority": "high",
+    "associated_tabs": [
+      {
+        "tab_name": "Video Editing Tools",
+        "url": "https://videoeditingtools.example.com"
+      }
+    ]
+  },
+  {
+    "id": "task-010",
+    "name": "Schedule Team Meeting",
+    "description": "Organizing and scheduling a meeting with team members.",
+    "time_active": 1800,
+    "previous_tab_names": [
+      "Meeting Scheduling Tool",
+      "Team Availability Calendar"
+    ],
+    "keywords": ["meeting", "scheduling", "team", "calendar"],
+    "created_at": "2024-12-01T04:00:00Z",
+    "last_active_at": "2024-12-01T04:30:00Z",
+    "related_urls": [
+      "https://meetingscheduler.example.com",
+      "https://teamcalendar.example.com"
+    ],
+    "priority": "low",
+    "associated_tabs": [
+      {
+        "tab_name": "Online Calendar",
+        "url": "https://onlinecalendar.example.com"
+      }
+    ]
+  },
+  {
+    "id": "task-011",
+    "name": "Compile Research Notes",
+    "description": "Organizing and summarizing notes from various research articles.",
+    "time_active": 3000,
+    "previous_tab_names": ["Research Articles", "Note-taking Application"],
+    "keywords": ["research", "notes", "organization", "summarizing"],
+    "created_at": "2024-12-01T03:00:00Z",
+    "last_active_at": "2024-12-01T04:00:00Z",
+    "related_urls": [
+      "https://researchnotes.example.com",
+      "https://notetakingapp.example.com"
+    ],
+    "priority": "medium",
+    "associated_tabs": [
+      {
+        "tab_name": "Research Database",
+        "url": "https://researchdatabase.example.com"
+      }
+    ]
+  }
+]

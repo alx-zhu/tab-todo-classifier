@@ -83,17 +83,36 @@ def get_score_tab_to_task(tab_name, task_name, prev_score=None, prev_explanation
                 {"role": "user", "content": prompt}
             ],
             temperature=0.3,
-            response_format={ "type": "json_object" }
+            response_format={
+                "type": "json_schema",
+                "json_schema": {
+                    "name": "tab_to_task_schema",
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "score": {
+                                "description": "(float between 0 and 1, where 1.0 means extremely relevant and 0.0 means completely irrelevant)",
+                                "type": "number",
+                            },
+                            "explanation": {
+                                "description": "(brief explanation of the score)",
+                                "type": "string",
+                            },
+                            "additionalProperties": False
+                        }
+                    }
+                }
+            }
         )
         
         # Parse the JSON response
         result = json.loads(response.choices[0].message.content.strip())
+        print(result)
         return result['score'], result.get('explanation')
     
     except Exception as e:
         st.error(f"Error: {str(e)}")
         return None, None
-
 
 def get_score_tab_to_history(tab_name, history, prev_score=None, prev_explanation=None):
     feedback_injection = (f"""
