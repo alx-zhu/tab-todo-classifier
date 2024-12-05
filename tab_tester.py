@@ -1,5 +1,5 @@
 import streamlit as st
-from one_to_many import pick_from_many_tasks_tournament, pick_from_many_tasks_tournament_verbose
+from best_fit_task import pick_from_many_tasks_tournament_verbose
 import openai
 import os
 import json
@@ -178,7 +178,7 @@ def test_classifier_tab():
             st.write(f"Selected tab: {tab}")
             st.write("### Tournament Rounds")
             for i, r in enumerate(tournament):
-                st.write(f"Round: {i+1}")
+                st.write(f"Round: {i}")
                 st.write([{"task": task["name"], "explanation": exp} for (task, exp) in r])
 
 def test_one_to_many_main_page():

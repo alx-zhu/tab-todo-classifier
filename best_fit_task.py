@@ -82,12 +82,10 @@ def pick_from_many_tasks(tasks, tab) -> Tuple[int, str | None]:
         
         Respond with a JSON object containing:
         - id: the id of the selected task (number from 0 to {n-1})
-        - explanation: (brief explanation of why you selected the task)
+        - explanation: (explanation of why you selected the task for the specific tab. Make sure the explanation is specific to the tab and the chosen task.)
     
         Return only valid JSON.
     """
-
-    print(tasks)
 
     try:
         response = openai.chat.completions.create(
@@ -109,7 +107,7 @@ def pick_from_many_tasks(tasks, tab) -> Tuple[int, str | None]:
                                 "type": "number",
                             },
                             "explanation": {
-                                "description": "(brief explanation of why you selected the task)",
+                                "description": "(explanation of why you selected the task for the specific tab. Make sure the explanation is specific to the tab and the chosen task.)",
                                 "type": "string",
                             },
                             "additionalProperties": False
@@ -165,13 +163,14 @@ def pick_from_many_tasks_tournament_verbose(tasks, tab, tasks_per_round=None, th
     if n < 2:
         return None
     
-    if not tasks_per_round or tasks_per_round >= n:
-        return pick_from_many_tasks(tasks, tab)
+    curr_tasks = [(task, "Initial Round") for task in tasks]
+    if not tasks_per_round or tasks_per_round >= n or tasks_per_round < 2:
+        tab, exp = pick_from_many_tasks(tasks, tab)
+        return tab, [curr_tasks, [(tab, exp)]]
     if tasks_per_round < 2:
         raise ValueError("tasks_per_round must be at least 2")
     
     tournament = []
-    curr_tasks = [(task, "Initial Round") for task in tasks]
     while len(curr_tasks) > 1:
         new_tasks = []
         tournament.append(curr_tasks)
@@ -191,3 +190,23 @@ def pick_from_many_tasks_tournament_verbose(tasks, tab, tasks_per_round=None, th
         raise ValueError("No task selected")
 
     return curr_tasks[0], tournament
+    
+def generic_most_common_answer(classify_fn, args:list, n=4, threads=4):
+    answers = []
+    
+    # Use ThreadPoolExecutor to make repeated parallel calls for the same pair
+    with ThreadPoolExecutor(max_workers=threads) as executor:
+        futures = [executor.submit(classify_fn, *args) for _ in range(n)]
+        
+        for future in as_completed(futures):
+            answer, _ = future.result()
+            if answer is not None:
+                answers.append(answer)
+
+    # Check if answers were collected successfully
+    if answers:
+        # Calculate the most common answer as the final classification
+        final_answer = max(set(answers), key=answers.count)
+        return final_answer
+    else:
+        return None
