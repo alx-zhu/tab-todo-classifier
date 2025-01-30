@@ -15,7 +15,7 @@ openai.api_key = os.getenv('OPENAI_API_KEY')
 # Tournament based task to tab pairing
 def pick_from_two_tasks(task1, task2, tab):
     prompt = f"""
-        You are an expert task classifier tabed with picking which task is most relevant to a given tab.
+        You are an expert task classifier tasked with picking which task is most relevant to a given tab.
         You are given this tab to classify tasks for: {tab}. Given the following two tasks, '1: {task1}' and '2: {task2},    
         select the task that is most relevant to the tab. 
         

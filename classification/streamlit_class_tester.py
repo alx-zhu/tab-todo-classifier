@@ -1,5 +1,5 @@
 import streamlit as st
-from best_fit_task import pick_from_many_tasks_tournament_verbose
+from classification.classification import pick_from_many_tasks_tournament_verbose
 import openai
 import os
 import json
