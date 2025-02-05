@@ -147,6 +147,8 @@ def pick_from_many_tasks_with_content(tasks: list, tab_url: str, tab_content: st
         The tab content is as follows: {tab_content}
         
         Given the following map of id to task: {task_map}, select the task that is most relevant to the tab, using the contents of the tab to guide your decision. 
+
+        Make sure to use the context of the tab URL itself in your decisions, in combination with the tab content.
         
         Respond with a JSON object containing:
         - id: the id of the selected task (number from 0 to {n-1})
@@ -229,6 +231,51 @@ def pick_from_many_tasks_tournament(tasks: list, tab: str, tasks_per_round=None,
             futures = []
             for i in range(0, len(curr_tasks), tasks_per_round):
                 futures.append(executor.submit(pick_from_many_tasks, curr_tasks[i:i+tasks_per_round], tab))
+            
+            for future in as_completed(futures):
+                task, _ = future.result()
+                if task is not None:
+                    new_tasks.append(task)
+        curr_tasks = new_tasks
+
+    if not curr_tasks:
+        raise ValueError("No task selected")
+
+    return curr_tasks[0], None
+
+def pick_from_many_tasks_tournament_with_content(tasks: list, tab_url: str, tasks_per_round=None, threads=4):
+    """
+    Tournament based tab classification, where tasks compete in rounds to be selected. The tournament continues until only one task remains.
+    `tasks_per_round` determines how many tasks compete in each round. If None, all tasks compete in the first round.
+
+    Args:
+        tasks (list): List of tasks to classify.
+        tab_url (str): The tab URL input.
+        tab_content (str): The tab content input.
+        tasks_per_round (int, optional): Number of tasks to compete in each round. Defaults to None.
+        threads (int, optional): Number of threads to use for parallel processing. Defaults to 4.
+
+    Returns:
+        tuple: The selected task and its explanation.
+    """
+    n = len(tasks)
+    if n < 2:
+        return None, None
+    
+    tab_content = fetch_tab_content(tab_url)
+    
+    if not tasks_per_round or tasks_per_round >= n:
+        return pick_from_many_tasks_with_content(tasks, tab_url, tab_content)
+    if tasks_per_round < 2:
+        raise ValueError("tasks_per_round must be at least 2")
+    
+    curr_tasks = tasks
+    while len(curr_tasks) > 1:
+        new_tasks = []
+        with ThreadPoolExecutor(max_workers=threads) as executor:
+            futures = []
+            for i in range(0, len(curr_tasks), tasks_per_round):
+                futures.append(executor.submit(pick_from_many_tasks_with_content, curr_tasks[i:i+tasks_per_round], tab_url, tab_content))
             
             for future in as_completed(futures):
                 task, _ = future.result()

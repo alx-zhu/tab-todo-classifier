@@ -128,6 +128,8 @@ def get_score_tab_to_task_with_content(tab_url, tab_content, task_name, prev_sco
 
     This is the content of the tab:
     {tab_content}
+
+    Make sure to use the context of the tab URL itself in your decisions, in combination with the tab content.
     
     Respond with a JSON object containing:
     - score: (float between 0 and 1, where 1.0 means extremely relevant and 0.0 means completely irrelevant)

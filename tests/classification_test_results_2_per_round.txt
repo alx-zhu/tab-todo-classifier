@@ -1,0 +1,247 @@
+Testing task picker consistency...
+=====================================
+Research AI: 2 Tasks Per Round
+=====================================
+---------- Unit Test 0 ----------
+
+Tab URL: https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Watch Online Course': 10}, 'most_frequent_task': 'Watch Online Course', 'consistency_score': 1.0}
+
+
+---------- Unit Test 1 ----------
+
+Tab URL: https://www.coursera.org/learn/machine-learning
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Watch Online Course': 10}, 'most_frequent_task': 'Watch Online Course', 'consistency_score': 1.0}
+
+
+---------- Unit Test 2 ----------
+
+Tab URL: https://www.coursera.org/learn/deep-learning-ai
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Watch Online Course': 10}, 'most_frequent_task': 'Watch Online Course', 'consistency_score': 1.0}
+
+
+Research AI completed.
+
+=====================================
+Write History Paper: 2 Tasks Per Round
+=====================================
+---------- Unit Test 0 ----------
+
+Tab URL: https://www.youtube.com/watch?v=_uk_6vfqwTA
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Watch Online Course': 10}, 'most_frequent_task': 'Watch Online Course', 'consistency_score': 1.0}
+
+
+---------- Unit Test 1 ----------
+
+Tab URL: https://www.history.com/topics/world-war-ii
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Write History Paper': 10}, 'most_frequent_task': 'Write History Paper', 'consistency_score': 1.0}
+
+
+Write History Paper completed.
+
+=====================================
+Apply to Jobs: 2 Tasks Per Round
+=====================================
+---------- Unit Test 0 ----------
+
+Tab URL: https://jobs.ashbyhq.com/kleinerperkinsfellows/97a02c44-099d-490d-9353-136e7a25fb4c
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Apply to Jobs': 10}, 'most_frequent_task': 'Apply to Jobs', 'consistency_score': 1.0}
+
+
+---------- Unit Test 1 ----------
+
+Tab URL: https://www.linkedin.com/jobs/
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Apply to Jobs': 10}, 'most_frequent_task': 'Apply to Jobs', 'consistency_score': 1.0}
+
+
+---------- Unit Test 2 ----------
+
+Tab URL: https://www.indeed.com/
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Apply to Jobs': 10}, 'most_frequent_task': 'Apply to Jobs', 'consistency_score': 1.0}
+
+
+---------- Unit Test 3 ----------
+
+Tab URL: https://job-boards.greenhouse.io/perplexityai/jobs/4537480007
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Apply to Jobs': 10}, 'most_frequent_task': 'Apply to Jobs', 'consistency_score': 1.0}
+
+
+Apply to Jobs completed.
+
+=====================================
+Watch Online Course: 2 Tasks Per Round
+=====================================
+---------- Unit Test 0 ----------
+
+Tab URL: https://www.coursera.org/
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Watch Online Course': 10}, 'most_frequent_task': 'Watch Online Course', 'consistency_score': 1.0}
+
+
+---------- Unit Test 1 ----------
+
+Tab URL: https://www.udacity.com/
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Watch Online Course': 9, 'Research AI': 1}, 'most_frequent_task': 'Watch Online Course', 'consistency_score': 0.9}
+
+
+---------- Unit Test 2 ----------
+
+Tab URL: https://www.udemy.com/
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Watch Online Course': 10}, 'most_frequent_task': 'Watch Online Course', 'consistency_score': 1.0}
+
+
+Watch Online Course completed.
+
+=====================================
+Read News Articles: 2 Tasks Per Round
+=====================================
+---------- Unit Test 0 ----------
+
+Tab URL: https://www.nytimes.com/
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Read News Articles': 10}, 'most_frequent_task': 'Read News Articles', 'consistency_score': 1.0}
+
+
+---------- Unit Test 1 ----------
+
+Tab URL: https://www.theguardian.com/us
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Read News Articles': 10}, 'most_frequent_task': 'Read News Articles', 'consistency_score': 1.0}
+
+
+---------- Unit Test 2 ----------
+
+Tab URL: https://www.bbc.com/news
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Read News Articles': 10}, 'most_frequent_task': 'Read News Articles', 'consistency_score': 1.0}
+
+
+Read News Articles completed.
+
+=====================================
+Travel Abroad: 2 Tasks Per Round
+=====================================
+---------- Unit Test 0 ----------
+
+Tab URL: https://wwoof.es/en/hosts?map.lat=40.9415270946638&map.lon=-3.71612548828125&map.zoom=7
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Travel Abroad': 10}, 'most_frequent_task': 'Travel Abroad', 'consistency_score': 1.0}
+
+
+---------- Unit Test 1 ----------
+
+Tab URL: https://www.hostelworld.com/
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Travel Abroad': 10}, 'most_frequent_task': 'Travel Abroad', 'consistency_score': 1.0}
+
+
+---------- Unit Test 2 ----------
+
+Tab URL: https://www.airbnb.com/
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Travel Abroad': 10}, 'most_frequent_task': 'Travel Abroad', 'consistency_score': 1.0}
+
+
+Travel Abroad completed.
+
+=====================================
+Shop for Laptop: 2 Tasks Per Round
+=====================================
+---------- Unit Test 0 ----------
+
+Tab URL: https://www.apple.com/shop/buy-mac/macbook-pro/13
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Shop for Laptop': 10}, 'most_frequent_task': 'Shop for Laptop', 'consistency_score': 1.0}
+
+
+---------- Unit Test 1 ----------
+
+Tab URL: https://www.dell.com/en-us/shop/dell-laptops/sc/laptops
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Shop for Laptop': 10}, 'most_frequent_task': 'Shop for Laptop', 'consistency_score': 1.0}
+
+
+Shop for Laptop completed.
+
+=====================================
+Review Work Documents: 2 Tasks Per Round
+=====================================
+---------- Unit Test 0 ----------
+
+Tab URL: https://drive.google.com
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Review Work Documents': 6, 'Read News Articles': 3, 'Apply to Jobs': 1}, 'most_frequent_task': 'Review Work Documents', 'consistency_score': 0.6}
+
+
+---------- Unit Test 1 ----------
+
+Tab URL: https://docs.google.com
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Review Work Documents': 5, 'Read News Articles': 3, 'Apply to Jobs': 1, 'Manage Personal Finances': 1}, 'most_frequent_task': 'Review Work Documents', 'consistency_score': 0.5}
+
+
+Review Work Documents completed.
+
+=====================================
+Manage Personal Finances: 2 Tasks Per Round
+=====================================
+---------- Unit Test 0 ----------
+
+Tab URL: https://www.bankofamerica.com/
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Manage Personal Finances': 10}, 'most_frequent_task': 'Manage Personal Finances', 'consistency_score': 1.0}
+
+
+---------- Unit Test 1 ----------
+
+Tab URL: https://www.chase.com/
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Manage Personal Finances': 10}, 'most_frequent_task': 'Manage Personal Finances', 'consistency_score': 1.0}
+
+
+Manage Personal Finances completed.
+
+=====================================
+Edit Photos: 2 Tasks Per Round
+=====================================
+---------- Unit Test 0 ----------
+
+Tab URL: https://www.canva.com/photo-editor/
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Edit Photos': 10}, 'most_frequent_task': 'Edit Photos', 'consistency_score': 1.0}
+
+
+---------- Unit Test 1 ----------
+
+Tab URL: https://www.adobe.com/express/
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Edit Photos': 10}, 'most_frequent_task': 'Edit Photos', 'consistency_score': 1.0}
+
+
+Edit Photos completed.
+
+=====================================
+Ambiguous: 2 Tasks Per Round
+=====================================
+---------- Unit Test 0 ----------
+
+Tab URL: https://mail.google.com
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']
+Results: {'total_trials': 10, 'total_selections': 10, 'selection_counts': {'Read News Articles': 5, 'Review Work Documents': 3, 'Manage Personal Finances': 1, 'Apply to Jobs': 1}, 'most_frequent_task': 'Read News Articles', 'consistency_score': 0.5}
+
+
+---------- Unit Test 1 ----------
+
+Tab URL: https://calendar.google.com
+Tasks: ['Research AI', 'Write History Paper', 'Apply to Jobs', 'Watch Online Course', 'Read News Articles', 'Travel Abroad', 'Shop for Laptop', 'Review Work Documents', 'Manage Personal Finances', 'Edit Photos']

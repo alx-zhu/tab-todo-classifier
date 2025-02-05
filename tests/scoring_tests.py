@@ -94,11 +94,24 @@ def borderline_relevance_tests():
                      ("Borderline: AI Research Job x Apply to Jobs", "https://job-boards.greenhouse.io/perplexityai/jobs/4537480007", "Apply to Jobs"),]
     run_unit_test_suite("Borderline Relevance Tests", testing_pairs)
 
+def ambiguous_relevance_tests():
+    testing_pairs = [("Google Drive x Research AI", "https://drive.google.com", "Research AI"),
+                     ("Google Drive x Apply to Jobs", "https://drive.google.com", "Apply to Jobs"),
+                     ("Google Drive x Travel Abroad", "https://drive.google.com", "Travel Abroad"),
+                     ("Gmail x Research AI", "https://mail.google.com", "Research AI"),
+                     ("Gmail x Apply to Jobs", "https://mail.google.com", "Apply to Jobs"),
+                     ("Gmail x Travel Abroad", "https://mail.google.com", "Travel Abroad"),
+                     ("Google Calendar x Research AI", "https://calendar.google.com", "Research AI"),
+                     ("Google Calendar x Apply to Jobs", "https://calendar.google.com", "Apply to Jobs"),
+                     ("Google Calendar x Travel Abroad", "https://calendar.google.com", "Travel Abroad"),]
+    run_unit_test_suite("Ambiguous Relevance Tests", testing_pairs)
+
 def run_unit_tests():
     print("Testing relevance scoring with tab content...")
-    high_relevance_tests()
-    low_relevance_tests()
-    borderline_relevance_tests()        
+    # high_relevance_tests()
+    # low_relevance_tests()
+    # borderline_relevance_tests()   
+    ambiguous_relevance_tests()     
     print("All tests completed.")
 
 if __name__ == "__main__":
